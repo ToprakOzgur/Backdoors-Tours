@@ -318,4 +318,82 @@ a {
     background: var(--mainWhite);
 }
 
+.tour-card {
+    margin-bottom: 4rem;
+    box-shadow: var(--lightShadow);
+    transition: var(--mainTransition);
+}
+
+.tour-card:hover {
+    box-shadow: var(--darkShadow);
+}
+
+.tour-img-container {
+    position: relative;
+}
+
+.tour-date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--primaryColor);
+    text-transform: capitalize;
+    padding: 0.25rem 0.5rem;
+}
+
+.tour-footer {
+    padding: 1.2rem 1.5rem;
+}
+
+.tour-title {
+    text-transform: capitalize;
+}
+
+
+
+.tour-country {
+    color: var(--primaryColor);
+    text-transform: capitalize;
+    align-self: center;
+}
+
+.tour-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tour-details p {
+    line-height: 0.2rem;
+    text-transform: capitalize;
+    color: var(--darkGrey);
+    letter-spacing: 0.02rem;
+}
+
+.tour-country {
+    align-self: center;
+}
+
+.tour-link {
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    .featured-center {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .tour-card {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+
+@media screen and (min-width:1170px) {
+    .tour-card {
+        flex: 0 0 calc(33.33% - 1rem);
+    }
+}
+
 /* end of featured */
