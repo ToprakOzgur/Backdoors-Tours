@@ -237,6 +237,7 @@ a {
     }
 }
 
+/* end of about */
 /* services */
 .service {
     text-align: center;
@@ -312,4 +313,9 @@ a {
 }
 
 /* end of services */
-/* end of about */
+/* featured */
+.featured {
+    background: var(--mainWhite);
+}
+
+/* end of featured */
