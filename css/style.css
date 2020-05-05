@@ -77,7 +77,9 @@ a {
 }
 
 /* more global styles */
-.btn-white {
+/* buttons */
+.btn-white,
+.btn-primary {
     text-transform: uppercase;
     letter-spacing: var(--mainSpacing);
     color: var(--mainWhite);
@@ -88,9 +90,48 @@ a {
     cursor: pointer;
 }
 
+.btn-primary {
+    background: var(--primaryColor);
+    color: var(--mainWhite);
+    border-color: var(--primaryColor);
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--primaryColor);
+}
+
 .btn-white:hover {
     background: var(--mainWhite);
     color: var(--primaryColor);
+}
+
+/* section */
+.section {
+    padding: 5rem 0;
+}
+
+/* title */
+.title-wrapper {
+    margin-bottom: 2rem;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    letter-spacing: 0.5rem;
+}
+
+.subtitle {
+    color: var(--primaryColor);
+}
+
+/* section center */
+.section-center {
+    width: 85vw;
+    margin: 4rem auto 2rem auto;
+    max-width: 1170px;
 }
 
 /*************** end of global styles **********************/
@@ -104,6 +145,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .hero-banner {
@@ -116,6 +158,7 @@ a {
     text-transform: uppercase;
     margin-bottom: 2rem;
     letter-spacing: 0.4rem;
+
 }
 
 .hero-text {
@@ -141,3 +184,57 @@ a {
 }
 
 /*************** end of hero **********************/
+
+/* about */
+.about {
+    background: var(--mainWhite);
+}
+
+/* section added to globals */
+/* title added to globals */
+/* section center added to globals */
+.about-img,
+.about-info {
+    margin-bottom: 4rem;
+}
+
+.about-info h3 {
+    text-transform: uppercase;
+}
+
+@media screen and (min-width:992px) {
+    .about-center {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-img,
+    .about-info {
+        flex: 0 0 calc(50% - 2rem);
+        margin-bottom: 0;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width:1170px) {
+    .about-img::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 0.5rem solid var(--primaryColor);
+        top: -1.5rem;
+        left: -1.5rem;
+
+    }
+
+    .about-img {
+        position: relative;
+    }
+
+    .about-photo {
+        position: relative;
+    }
+}
+
+/* end of about */
